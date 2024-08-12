@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family:'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.main-header {
+  display: flex;
+  background-color: rgb(8, 8, 8);
+  padding-top: 5px;
+}
+
+.nipponova-logo img {
+  border: 1px solid red;
+  max-height: fit-content;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar {
+  display: flex;
+ 
+}
+
+nav .nav-bar-ol {
+  display: flex;
+}
+
+.nav-link {
+  color: antiquewhite;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.search-bar {
+  padding: 24px;
+}
+
+.search-bar input {
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.search-bar button {
+  height: 24px;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.shopping-cart {
+  color:antiquewhite;
+  padding: 20px;
+}
+
+.raichu-picture img {
+  max-height: 200px;
+  margin: 0;
+  justify-content: end;
+}
+
+.body-background img {
+  border: 1px solid red;
+  opacity: 0.8;
+  width: 99.92%;
+  height: 40px;
+}
