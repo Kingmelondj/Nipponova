@@ -5,14 +5,18 @@
 }
 
 body {
-  background-color: #faebd7;
+  background-color: #1e1d1c;
+}
+
+iframe {
+  border-radius: 20px;
 }
 
 /* Header-Nav */
 
 .main-header {
   display: flex;
-  background-color: rgb(8, 8, 8);
+  background-color: #1e1d1c;
   padding-top: 5px;
 }
 
@@ -88,11 +92,6 @@ nav .nav-bar-ol {
   padding-right: 200px;
 }
 
-.raichu-picture img {
-  max-height: 140px;
-  max-width: 140px;
-}
-
 .welcome-img img {
   max-height: 186px;
   max-width: 140px;
@@ -119,9 +118,7 @@ nav .nav-bar-ol {
 .section-header h1 {
   color: #ce5b5b;
   font-size: 52px;
-  margin: 20px;
   padding: 24px;
-  border: 20px solid rgb(206, 91, 91);
   text-align: center;
   background-image: url(https://media0.giphy.com/media/WPwD0gdWFsNRy8LA2P/giphy.webp?cid=ecf05e470bqf8r4u6wkmwzy1zmb1sr19h6fubkbclgmpy0si&ep=v1_gifs_search&rid=giphy.webp&ct=g);
   background-size: cover;
@@ -131,6 +128,14 @@ nav .nav-bar-ol {
   text-transform: uppercase;
 }
 
+
+.section-header {
+ background-image: url(images/japanese-flag.jpg);
+ background-repeat: no-repeat;
+ margin: 20px;
+ background-size: cover;
+ border-radius: 2px;
+}
 /* Img-Flow */
 
 .img-flow {
@@ -238,12 +243,11 @@ nav .nav-bar-ol {
  display: flex;
  padding: 20px;
  margin: 20px;
- background-color: #ce5b5b;
- 
+ background-color: #353232;
 }
 
 .history-section article {
-  color: #faebd7;
+  color: #b64545;
   font-size: 24px;
   font-weight: 600;
   height: 500px;
@@ -258,19 +262,29 @@ nav .nav-bar-ol {
 
 .anime-article {
   overflow-x: scroll;
+  background-image: url(images/seshomaru-transparent.png);
+  background-size: 25%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  background-position-y: bottom;
+  background-position-x: left;
 }
-
-/* .anime-article {
-  background-image: url('images/naruto-baryon-mode-art-hd-wallpaper-1920x1080-uhdpaper.com-226.0_c.jpg');
-} */
 
 .history-section a {
   text-decoration: none;
-  color: #8f5151;
+  color: #faebd7;
+  background-color: #ce5b5b;
+  border: 4px solid #ce5b5b;
+  border-radius: 8px;
+  padding: 2px;
 }
 
 .history-section a:hover{
-  color: #784a47;
+  color: #faebd7;
+  background-color: #ce5b5b;
+  border: 4px solid #ce5b5b;
+  border-radius: 8px;
+  padding: 8px;
 }
 
 /* Anime Vid Section */
@@ -300,6 +314,10 @@ nav .nav-bar-ol {
   margin: 20px;
   padding: 40px;
   border: 10px solid #ce5b5b;
+  background-image: url(images/naruto-baryon-mode.jpeg);
+  justify-items: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .anime-content-resources a {
@@ -329,16 +347,20 @@ nav .nav-bar-ol {
   flex-wrap: wrap;
   background-color: #ce5b5b;
   margin: 20px;
-  padding: 22px;
   border: 4px solid #ab8d3f;
-
+  background-image: url(images/naruto-logo-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 60%;
 }
 
 .manga-panel img {
   height: 720px;
   width: 360px;
   border: 3px solid #ab8d3f;
-  margin: 10px;
+  margin: 20px;
+  opacity: 0.9;
 }
 
 div.manga-panel .manga-panel-link-naruto img{
@@ -351,6 +373,16 @@ div.manga-panel .manga-panel-link-naruto img{
 
 .manga-article {
   overflow-x: scroll;
+  background-image: url(images/kid-goku.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  opacity: 0.8;
+  background-position: relative;
+}
+
+.manga-article a:hover {
+  background-color: #ce5b5b;
+  color: #faebd7;
 }
 
 /* Manga Books Section */
@@ -360,6 +392,11 @@ div.manga-panel .manga-panel-link-naruto img{
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  background-image: url(images/dragon.png);
+  background-repeat: no-repeat;
+  background-position-x:right;
+  background-position-y:bottom;
+  background-size: 46%;
 }
 
 .manga-books-container img {
@@ -382,6 +419,7 @@ div.manga-panel .manga-panel-link-naruto img{
 
 .manga-books-container p {
   padding: 12px;
+  color: #faebd7;
 }
 
 .manga-books-container a:hover {
@@ -389,6 +427,26 @@ div.manga-panel .manga-panel-link-naruto img{
 }
 
 /* Audio Section */
+
+.music-article {
+  overflow-x: scroll;
+  background-image: url(/images/mew.gif);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 20%;
+  opacity: .8;
+}
+
+.music-article a {
+  border: none;
+  padding: 4px;
+}
+
+.music-article a:hover {
+  background-color: #ce5b5b;
+  color: #faebd7;
+}
 
 .audio-section {
   background-color: #ce5b5b;
@@ -404,60 +462,167 @@ div.manga-panel .manga-panel-link-naruto img{
 .audio-container {
   padding: 42px;
   align-items: center;
+  margin: 32px;
+  border-radius: 20px;
+  background-color: #1e1d1c;
 }
 
 .audio-container h4 {
   font-size: 32px;
   color: #faebd7;
-  text-decoration: line-through;
 }
 
 .audio-section img {
   max-width: 300px;
   max-height: 300px;
   border-radius: 8px;
+  padding-bottom: 20px;
 }
 
 .audio-tracks {
   overflow-x: scroll;
-  height: 300px;
+  height: 420px;
   width: 300px;
-  background-color: #309f77;
-  border-radius: 8px;
-  border:1px solid #ebd34c;
+  background-color: #ce5b5b;
+  border-radius: 20px;
 }
 
 .audio-section audio {
-  margin: 10px;
-  padding: 10px;
+  margin: 4px;
+  padding: 4px;
   width: 260px;
 }
 
 audio::-webkit-media-controls-play-button,
      audio::-webkit-media-controls-panel {
-     background-color: #ebd34c;
+     background-color: #faebd7;
      }
 
-.audio-section a {
+.audio-section p {
   text-decoration: none;
-  color: #0e0e0e;
-  padding: 12px;
+  color: #faebd7;
+  padding: 4px;
   border-radius: 2px;
   font-size: 24px;
 }
 
-.audio-section a:hover {
-  color: #ebd34c;
+/* Music player container */
+/* This is a work in progress */
+/* .music-player-container {
+  width: 360px;
+  height: 640px;
+  background-color: #ab8d3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 4px;
 }
+
+.music-player {
+  width: 100%;
+  padding: 25px 35px;
+  text-align: center;
+}
+
+.music-player-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+nav .circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #343332;
+  color: #ce5b5b;
+  box-shadow: 0 5px 10px #ce5b5b;
+}
+
+img.song-img {
+  width: 220px;
+  box-shadow: 0 10px 60px #ce5b5b;
+}
+
+.music-player h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #343332;
+  margin-top: 20px;
+}
+
+.music-player p {
+  font-size: 14px;
+  color: #343332;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #ce5b5b;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ce5b5b;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 8px solid #343332;
+  box-shadow: 0 5px 5px #ab8d3f;
+}
+
+.music-player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-player-controls div{
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background: #343332;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #ce5b5b;
+  box-shadow: 0 4px 4px #faebd7;
+  cursor: pointer;
+}
+
+.music-player-controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: #ce5b5b;
+  color: #ab8d3f;
+} */
+
 /* Music Video Section */
 
 .vid-section {
   display: flex;
   flex-wrap: wrap;
-  text-align: left;
+  text-align: center;
+  justify-content: center;
+}
+
+.vid-container {
+  margin-bottom: 24px;
+  background-color: #1e1d1c;
 }
 
 .vid-container a {
+  display: flex;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  justify-content: center;
   text-decoration: none;
   margin: 28px;
   padding: 4px;
@@ -466,8 +631,16 @@ audio::-webkit-media-controls-play-button,
   color: #0e0e0e;
   background-color: #faebd7;
   border: 4px solid #faebd7;
+  width: 360px;
 }
 
 .vid-container a:hover {
-  color: #ce5b5b;
+  color: #faebd7;
+  background-color: #ce5b5b;
+  border: 4px solid #ce5b5b;
+}
+
+.vid-container iframe {
+  display: flex;
+  flex-wrap: wrap;
 }
